@@ -1,10 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const Details = () => {
+const Details = ({ navigation, route }) => {
+
+  const house = route.params
+
   return (
     <View>
-      <Text>Details</Text>
+      <Text>{house.title}</Text>
     </View>
   )
 }
